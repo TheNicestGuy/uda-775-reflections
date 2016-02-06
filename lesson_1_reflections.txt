@@ -1,0 +1,45 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+The change that caused the bug was shown as one of only a handful of changes. This was far easier
+to work with than poring over the entire file, so the bug was more easily spotted.
+
+How could having easy access to the entire history of a file make you a more efficient programmer
+in the long term?
+
+Often, a task involves making a small change to code that is similar to an earlier change and for
+a similar reason. Being able to review the earlier change can make the current task easier, faster,
+and more reliable. Also, a newish bug may not be spotted until after other newer changes have been
+made. I may need to look back several versions to find it.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do
+in Git, vs having versions automatically saved, like Google Docs does?
+
+The only con is that if I forget to commit at the appropriate time, there is no automation to catch
+my mistake. The main pro is that if I'm conscientious, every commit has a sensible purpose that's
+clearly linked with its content. Another pro is that the number of commits is neither too large nor
+too small.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit,
+while others, like Google Docs, treat each file separately?
+
+The systems are designed for different purposes. Google Docs, being a generic repository for files
+with no implied relationship between them, simplifies its versioning. Also, since Google Docs
+commits changes automatically and very frequently, for every commit to include every file would
+be overwhelming. Git, on the other hand, is specifically for code. In almost any coding project,
+multiple files will be closely interrelated, and a single logical change could affect several
+files--with all of them necessary for the change to be complete and correct.
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log will help me review the overall history of commits or find a specific one by its message.
+git diff will show me the details of how files changed in each commit.
+
+How might using version control make you more confident to make changes that could break something?
+
+If I do not commit a breaking change, I can always checkout the most recent commit and start over,
+or diff from the most recent commit to more easily look for the bug. Even if I do commit, the file
+history will still help me find and fix it.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Ultimately, to manage complete Web applications, all stacks from database schema to CSS.
