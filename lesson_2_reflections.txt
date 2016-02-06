@@ -23,3 +23,13 @@ would branches help?
 When I want to begin a large change that will not be ready for release for some time, but I still
 want myself or others to be able to release smaller fixes quickly, I can create a separate branch
 for the big project. Fast, urgent work can still be done on the master branch.
+
+How do the diagrams help you visualize the branch structure?
+
+The diagram shows me clearly which commit is each commit's parent. More importantly, it shows
+which commit is the common parent of multiple commits on different branches--the branch point.
+I imagine that will be a crucial detail to have in mind when the time comes to merge those
+branches back together. It's also helpful that the diagram makes it obvious when a commit on one
+branch is not reachable from a commit on another, so I know that those two commits probably have
+distinct changes from the common parent that are unrelated to each other.
+
