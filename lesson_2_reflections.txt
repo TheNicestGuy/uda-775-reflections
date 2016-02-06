@@ -10,3 +10,9 @@ The staging area is a virtual concept within Git, as opposed to the working dire
 more "physical" reflection of the file system. The repository is also virtual in a similar sense,
 but it is much more permanent, whereas the staging area is temporary by design. The staging area
 offers a chance to choose exactly what your commit will look like before it is set in stone.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+If your working directory contains more than one logical change, but no given file is affected
+by more than one, the staging area allows you to gather only the files needed for each change one
+at a time.
