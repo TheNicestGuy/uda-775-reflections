@@ -33,3 +33,10 @@ branches back together. It's also helpful that the diagram makes it obvious when
 branch is not reachable from a commit on another, so I know that those two commits probably have
 distinct changes from the common parent that are unrelated to each other.
 
+What is the result of merging two branches together? Why do we represent it in the diagram the way
+we do?
+
+After merging, the destination branch (master) contains all the changes it already had, combined
+with all the changes that had been made in the coins branch. The diagram shows that the two lines
+of changes were made independently, in parallel, and it shows which commit brought them together
+for the first time.
