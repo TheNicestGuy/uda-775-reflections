@@ -12,3 +12,18 @@ times and in unpredictable ways. If those changes were suddenly applied to my wo
 without warning, they would at best startle me and at worst completely break my own project. I
 should choose to pull only at times when I'm ready to understand and deal with what has changed
 in the remote when I wasn't looking.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of
+another?
+
+A branch is a single series of changes within a single repository, which is (maybe temporarily)
+independent of any other series. I would make a new branch when the repository may need to have
+unrelated changes committed simultaneously, and I want to choose the time in the future that those
+series will be merged together. A clone is a new copy of a repository, complete with change
+history, either within one Git installation or between two different installations. In the latter
+case, one may be linked to the other as a remote so they can stay synchronized, but otherwise they
+are independent. I would make a clone usually when I want to do local work on my own remote
+repository. A fork is a clone, but specifically one that is meant to be an independent
+continuation of and/or departure from the original. Forks are a special feature of GitHub,
+and GitHub will link a new fork back to the original repository as a remote. I would make a fork
+whenever I want to do my own work on someone else's public repository.
