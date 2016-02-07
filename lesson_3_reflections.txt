@@ -49,3 +49,13 @@ ton of tedious chores for each collaborator to keep their working set up-to-date
 use one central fileset shared over a network, but this would completely suck. There would be no
 history tracking, branching and merging would be a giant headache, and a lack of concurrent access
 to each file would be constantly putting the brakes on people actually working together.
+
+When would you want to make changes in a separate branch rather than directly in master? What
+benefits does each approach have?
+
+One situation would be when I don't have permission to change master directly, or it would be rude
+to do so without consulting other collaborators. In such a case, using branches and pull requests
+allows the team to reach consensus that the changes are master-ready before they affect anyone but
+me. Another is when the changes I want to make are too large, complex, or experimental to put off
+committing until I'm fully confident in them. If I commit often, but I don't use a separate branch,
+then master will be frequently broken; master should ideally never be broken.
