@@ -35,3 +35,17 @@ committed new changes and am ahead of it, or I've checked out an older commit an
 It can even do this when it can't connect to the remote, or when I'm not ready to deal with a new
 pull. Also, when I finally do a pull or push, and Git needs to check for conflicts, it knows that
 it can save time by ignoring any older commits to the remote that it already knew about.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be
+harder?
+
+Obviously I could collaborate using a different multi-user source control system, and the
+differences would depend on which one. I could use Git, but not GitHub, which would be harder
+because I would have to administer a server myself and I wouldn't have all of GitHub's online
+tools; on the other hand, I could customize the server to taste, keep it secure on a LAN,
+private for free, etc. I could just use emailed text and files, either person-to-person or with a
+listserv. This would require none of the infrastructure of Git or GitHub, but it would create a
+ton of tedious chores for each collaborator to keep their working set up-to-date. Finally, I could
+use one central fileset shared over a network, but this would completely suck. There would be no
+history tracking, branching and merging would be a giant headache, and a lack of concurrent access
+to each file would be constantly putting the brakes on people actually working together.
