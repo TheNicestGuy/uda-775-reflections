@@ -27,3 +27,11 @@ repository. A fork is a clone, but specifically one that is meant to be an indep
 continuation of and/or departure from the original. Forks are a special feature of GitHub,
 and GitHub will link a new fork back to the original repository as a remote. I would make a fork
 whenever I want to do my own work on someone else's public repository.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+Git can always tell me how my HEAD relates to last known state of the remote, whether I've
+committed new changes and am ahead of it, or I've checked out an older commit and I'm behind it.
+It can even do this when it can't connect to the remote, or when I'm not ready to deal with a new
+pull. Also, when I finally do a pull or push, and Git needs to check for conflicts, it knows that
+it can save time by ignoring any older commits to the remote that it already knew about.
